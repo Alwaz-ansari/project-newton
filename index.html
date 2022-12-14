@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML AND CSS Project</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Roboto Slab', serif;
+
+        }
+        .container{
+            display: flex;
+            width: 1100px;
+            max-width: 100%;
+            margin: 0 auto;
+            
+            
+        }
+        .small-container{
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto auto;
+            
+        }
+        .item{
+            height: 400px;
+            width: 250px;
+            background-color: red;
+            /* border: 2px solid black; */
+        }
+        #item_1{
+            background-color: rgb(255, 153, 0);
+            position: relative;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+
+        }
+    #item_1 .add{
+            padding: 23px 23px;
+            height: 24px;
+        }
+        #item_1 .head{
+            /* position: absolute; */
+            top: 10%;
+            padding-left: 22px;
+            color: white;
+        }
+        #item_1 .para{
+            color: white;
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        #item_1 .btn{
+            /* padding-left: 22px  ; */
+            margin-left: 22px;
+            height: 35px;
+            width: 100px;
+            border-radius: 24px;
+            border: 2px solid white;
+            background: white;
+            color:rgb(255, 153, 0);
+            margin-top: 46px;
+            font-weight: bold;
+        }
+        #item_1 .btn:active{
+            background: transparent;
+            color: white;
+        }
+        
+        #item_2{
+            background-color: #06746c
+
+
+;
+            
+        }
+
+        #item_2 .add{
+            padding: 23px 23px;
+            height: 24px;
+        }
+        #item_2 .head{
+            /* position: absolute; */
+            top: 10%;
+            padding-left: 22px;
+            color: white;
+        }
+        #item_2 .para{
+            color: white;
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        #item_2 .btn{
+            /* padding-left: 22px  ; */
+            margin-left: 22px;
+            height: 35px;
+            width: 100px;
+            border-radius: 24px;
+            border: 2px solid white;
+            background: white;
+            margin-top: 46px;
+            font-weight: bold;
+            color: #06746c;
+
+        }
+        #item_2 .btn:active{
+            background: transparent;
+            color: white;
+        }
+   
+        #item_3{
+            background-color: hsl(175, 90%, 12%);
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            
+        }
+        #item_3 .add{
+            padding: 23px 23px;
+            height: 24px;
+        }
+        #item_3 .head{
+            /* position: absolute; */
+            top: 10%;
+            padding-left: 22px;
+            color: white;
+        }
+        #item_3 .para{
+            color: white;
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        #item_3 .btn{
+            /* padding-left: 22px  ; */
+            margin-left: 22px;
+            height: 35px;
+            width: 100px;
+            border-radius: 24px;
+            border: 2px solid white;
+            background: white;
+            color: hsl(175, 90%, 12%);
+            margin-top: 46px;
+            font-weight: bold;
+
+        }
+        #item_3 .btn:active{
+            background: transparent;
+            color: white;
+        }
+        
+
+        @media(max-width:800px) {
+            .small-container{
+                display: block;
+                margin: auto auto;
+            }
+            #item_1{
+                margin-left:auto auto ;
+                /* margin-right: auto; */
+                border-top-right-radius: 10px;
+                border-bottom-left-radius: 0px;
+
+            }
+            #item_3{
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 10px;
+
+ 
+            }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="small-container">
+            
+            <div class="item" id="item_1"> <img class="add" src="icon-sedans.svg" alt=""> <h1 class="head">SEDANS</h1>
+                <p class="para">Choose a seadan for its affordability and excellent fuel economy. Ideal for cruising in the city or an your next road trip.</p>
+                <button class="btn">Learn More</button>
+            </div>
+        
+                  <div class="item" id="item_2">
+               
+                <img class="add" src="icon-suvs (1).svg" alt=""> <h1 class="head">Suvs</h1>
+                <p class="para">Take an SUV for its spacious interior,power,and versatility. Perfect for your next family vacation and off -roads adventures.</p>
+                <button class="btn">Learn More</button>
+
+            </div>
+        
+
+    
+            <div class="item" id="item_3" >
+                <img class="add" src="icon-luxury.svg" alt=""> <h1 class="head">LUXURY</h1>
+                <p class="para">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of luxury rental and arrive in style.</p>
+                <button class="btn">Learn More</button>
+
+            </div>
+        
+
+        </div>
+    </div>
+</body>
+
+</html>
